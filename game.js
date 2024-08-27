@@ -21,8 +21,8 @@ class Player {
 //몬스터 클레스 hp, 공격력
 class Monster {
   constructor(stage) {
-    this.hp = 50
-    this.monsterattack = 5
+    this.hp = 50 + Math.floor(Math.random() * stage * 5);
+    this.monsterattack = 5 + Math.floor(Math.random() * stage * 2);
   }
 //플레이어 공격할시
   attack(player) {
